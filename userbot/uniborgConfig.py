@@ -109,3 +109,8 @@ else:
     class Config(object):
         DB_URI = None
         # Add your UniBorg Vars Here
+from heroku_config import Var
+
+class Development(Var):
+  APP_ID = 1023751
+  API_HASH = "eb06d4abfb49b05a9358cf804bb89e5edcc507c1ea3e"
